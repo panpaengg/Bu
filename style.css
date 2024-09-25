@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: black;
+    background-color: white;
+  }
+  
+  .conainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 240px;
+    height: 150px;
+  }
+  
+  .carousel-slide-container {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .carousel-img {
+    width: 240px;
+    height: 150px;
+    transition: transform 0.3s ease-in;
+  }
+  
+  .btn-right,
+  .btn-left {
+    z-index: 1;
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  .btn-right img,
+  .btn-left img {
+    border-radius: 50%;
+    background-color: aliceblue;
+  }
+  
+  .btn-right {
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
+  
+  .btn-left {
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
